@@ -1,0 +1,16 @@
+name: CI Workflow
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # Specify the runner environment
+
+    steps:
+    - uses: actions/checkout@v2 # Action to check out the repository code
+    - name: Run a one-line script
+      run: echo Hello, world! # Execute a shell command
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
