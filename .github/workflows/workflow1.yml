@@ -14,3 +14,9 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+        
+    - name: Vc check with renovate
+      uses: actions/upload-artifact@v2
+        
+    - name: download
+      uses: actions/download-artifact@v2
