@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest # Specify the runner environment
 
     steps:
-    - uses: actions/checkout@v2 # Action to check out the repository code
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2 # Action to check out the repository code
     - name: Run a one-line script
       run: echo Hello, world! # Execute a shell command
     - name: Run a multi-line script
@@ -16,7 +16,7 @@ jobs:
         echo test, and deploy your project.
         
     - name: Vc check with renovate
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         
     - name: download
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
